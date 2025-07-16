@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Priyonix Portfolio Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href=""/>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Create Your Portfolio</h1>
+    <form id="portfolioForm">
+      <!-- Profile -->
+      <label>Profile Photo</label>
+      <input type="file" id="photo" accept="image/*" />
+
+      <label>Name</label>
+      <input type="text" id="name" required />
+
+      <label>Description</label>
+      <textarea id="description" required></textarea>
+
+      <!-- Socials -->
+      <label>LinkedIn</label>
+      <input type="url" id="linkedin" />
+
+      <label>GitHub</label>
+      <input type="url" id="github" />
+
+      <label>Instagram</label>
+      <input type="url" id="instagram" />
+
+      <!-- Skills -->
+      <label>Skills (comma separated)</label>
+      <input type="text" id="skills" placeholder="e.g., HTML, CSS, JS" />
+
+      <!-- Projects -->
+      <h3>Project 1</h3>
+      <label>Project Name</label>
+      <input type="text" id="projectName1" />
+      <label>Description</label>
+      <textarea id="projectDesc1"></textarea>
+      <label>Tools</label>
+      <input type="text" id="projectTools1" />
+      <label>Link</label>
+      <input type="url" id="projectLink1" />
+
+      <h3>Project 2</h3>
+      <label>Project Name</label>
+      <input type="text" id="projectName2" />
+      <label>Description</label>
+      <textarea id="projectDesc2"></textarea>
+      <label>Tools</label>
+      <input type="text" id="projectTools2" />
+      <label>Link</label>
+      <input type="url" id="projectLink2" />
+
+      <h3>Project 3</h3>
+      <label>Project Name</label>
+      <input type="text" id="projectName3" />
+      <label>Description</label>
+      <textarea id="projectDesc3"></textarea>
+      <label>Tools</label>
+      <input type="text" id="projectTools3" />
+      <label>Link</label>
+      <input type="url" id="projectLink3" />
+
+      <!-- Contact -->
+      <h3>Contact Info</h3>
+      <label>Contact Name</label>
+      <input type="text" id="contactName" />
+      <label>Phone</label>
+      <input type="tel" id="contactPhone" />
+      <label>Email</label>
+      <input type="email" id="contactEmail" />
+      <label>Message</label>
+      <textarea id="contactMessage"></textarea>
+
+      <!-- Submit -->
+      <button type="submit">Generate Portfolio</button>
+    </form>
+  </div>
+
+  <script src="form-handler.js"></script>
+</body>
+</html>

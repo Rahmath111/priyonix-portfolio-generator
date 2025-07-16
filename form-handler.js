@@ -65,7 +65,7 @@ window.addEventListener("DOMContentLoaded", () => {
       };
 
       localStorage.setItem("portfolioData", JSON.stringify(portfolioData));
-      window.location.href = "index.html";
+      window.location.href = "portfolio.html";
     }
   });
 });

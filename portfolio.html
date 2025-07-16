@@ -3,85 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Priyonix Portfolio Generator</title>
+  <title>Priyonix Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href=""/>
 </head>
 <body>
-  <div class="form-container">
-    <h1>Create Your Portfolio</h1>
-    <form id="portfolioForm">
-      <!-- Profile -->
-      <label>Profile Photo</label>
-      <input type="file" id="photo" accept="image/*" />
 
-      <label>Name</label>
-      <input type="text" id="name" required />
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#social">Social Media</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+  </nav>
 
-      <label>Description</label>
-      <textarea id="description" required></textarea>
+  <div class="portfolio-container">
 
-      <!-- Socials -->
-      <label>LinkedIn</label>
-      <input type="url" id="linkedin" />
+    <!-- ABOUT -->
+    <section id="about" class="about-section">
+      <div class="left">
+        <h1 id="userName"></h1>
+        <p id="userDescription"></p>
+      </div>
+      <div class="right">
+        <img id="profilePhoto" class="profile-photo" src="" alt="Profile Photo" />
+      </div>
+    </section>
 
-      <label>GitHub</label>
-      <input type="url" id="github" />
+    <!-- SOCIAL MEDIA -->
+    <section id="social" class="section">
+      <h2>Social Media</h2>
+      <div class="social-icons">
+        <a id="linkedin" target="_blank"><img src="assets/linkedin.webp" alt="LinkedIn" /></a>
+        <a id="github" target="_blank"><img src="assets/github.png" alt="GitHub" /></a>
+        <a id="instagram" target="_blank"><img src="assets/insta.png" alt="Instagram" /></a>
+      </div>
+    </section>
 
-      <label>Instagram</label>
-      <input type="url" id="instagram" />
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills-grid" id="skillsList"></ul>
+    </section>
 
-      <!-- Skills -->
-      <label>Skills (comma separated)</label>
-      <input type="text" id="skills" placeholder="e.g., HTML, CSS, JS" />
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-card-container" id="projectsContainer"></div>
+    </section>
 
-      <!-- Projects -->
-      <h3>Project 1</h3>
-      <label>Project Name</label>
-      <input type="text" id="projectName1" />
-      <label>Description</label>
-      <textarea id="projectDesc1"></textarea>
-      <label>Tools</label>
-      <input type="text" id="projectTools1" />
-      <label>Link</label>
-      <input type="url" id="projectLink1" />
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact Info</h2>
+      <p><strong>Name:</strong> <span id="contactName"></span></p>
+      <p><strong>Phone:</strong> <span id="contactPhone"></span></p>
+      <p><strong>Email:</strong> <span id="contactEmail"></span></p>
+      <p><strong>Message:</strong> <span id="contactMessage"></span></p>
+    </section>
 
-      <h3>Project 2</h3>
-      <label>Project Name</label>
-      <input type="text" id="projectName2" />
-      <label>Description</label>
-      <textarea id="projectDesc2"></textarea>
-      <label>Tools</label>
-      <input type="text" id="projectTools2" />
-      <label>Link</label>
-      <input type="url" id="projectLink2" />
+    <!-- FOOTER -->
+    <footer>
+      <p>SAKTHI MANSION, Door No 121, Plot No 74, Arulananda Ammal Nagar 5th Street,<br>
+        DON BOSCO School Main Road, Thanjavur-613007<br>
+        📞 78 4585 4585 / 78 4586 4586 / 04362-254586<br>
+        ✉️ info@priyonix.com | 🌐 www.priyonix.com</p>
+      <p>&copy; Priyonix</p>
+    </footer>
 
-      <h3>Project 3</h3>
-      <label>Project Name</label>
-      <input type="text" id="projectName3" />
-      <label>Description</label>
-      <textarea id="projectDesc3"></textarea>
-      <label>Tools</label>
-      <input type="text" id="projectTools3" />
-      <label>Link</label>
-      <input type="url" id="projectLink3" />
-
-      <!-- Contact -->
-      <h3>Contact Info</h3>
-      <label>Contact Name</label>
-      <input type="text" id="contactName" />
-      <label>Phone</label>
-      <input type="tel" id="contactPhone" />
-      <label>Email</label>
-      <input type="email" id="contactEmail" />
-      <label>Message</label>
-      <textarea id="contactMessage"></textarea>
-
-      <!-- Submit -->
-      <button type="submit">Generate Portfolio</button>
-    </form>
   </div>
 
-  <script src="form-handler.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
