@@ -234,8 +234,14 @@ footer {
 .social-icons img {
   width: 40px;
   height: 40px;
+  object-fit: contain;      /* Ensures the full icon fits in */
+  border-radius: 8px;       /* Optional: unify rounded look */
+  background-color: #fff;   /* Optional: add background for uniform shape */
+  padding: 4px;             /* Optional: avoids clipping if icons are not centered */
+  box-sizing: border-box;
   transition: transform 0.3s ease;
 }
+
 .social-icons img:hover {
   transform: scale(1.2);
 }
